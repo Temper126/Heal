@@ -11,13 +11,14 @@ use pocketmine\command\CommandSender;
 
 class Main extends PluginBase{
 
-    public function onEnable("Heal Enabled"){
+    public function onEnable(){
     }
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
 
-        if($cmd->getName() == "heal"){
+        switch($cmd->getName()){
 
+            case "heal":
                 if($sender instanceof Player){
 			if($sender->hasPermission("heal.command")){
 				$sender->setHealth(20);
