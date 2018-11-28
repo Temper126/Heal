@@ -1,0 +1,8 @@
+name: Heal
+main: Heal\main
+version: 1.0.0
+api: 3.2.2
+author: TeMp3r126
+commands:
+  heal:
+    description: "heal yourself"
