@@ -1,2 +1,2 @@
 # Heal
-A plugin that heals players
+A plugin that heals players!
